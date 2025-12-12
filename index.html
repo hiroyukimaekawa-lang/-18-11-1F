@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赤坂マーラータン - 美味いマーラータン</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>赤坂マーラータン</h1>
+                    <p class="tagline">美味いマーラータン</p>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#menu">メニュー</a></li>
+                        <li><a href="#about">当店について</a></li>
+                        <li><a href="#order">ネット注文</a></li>
+                        <li><a href="#reservation">予約</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">赤坂マーラータン</h2>
+            <p class="hero-subtitle">本格的なマーラータンを味わう</p>
+            <div class="hero-buttons">
+                <a href="#reservation" class="btn btn-primary">予約する</a>
+                <a href="#order" class="btn btn-secondary">ネット注文</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 店舗情報 -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-card">
+                <h3>店舗情報</h3>
+                <div class="info-details">
+                    <p><strong>住所:</strong> 東京都港区赤坂6丁目13-3　1F</p>
+                    <p><strong>営業時間:</strong> 11:00 - 22:00</p>
+                    <p><strong>定休日:</strong> 不定休</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メニューセクション -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">メニュー</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image-placeholder">
+                        <span>マーラータン</span>
+                    </div>
+                    <h3>マーラータン</h3>
+                    <p>本格的な四川風マーラータン鍋</p>
+                    <p class="price">¥1,980〜</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image-placeholder">
+                        <span>特選マーラータン</span>
+                    </div>
+                    <h3>特選マーラータン</h3>
+                    <p>上質な具材を使用した特選鍋</p>
+                    <p class="price">¥2,980〜</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image-placeholder">
+                        <span>飲み放題</span>
+                    </div>
+                    <h3>飲み放題</h3>
+                    <p>各種ドリンク飲み放題プラン</p>
+                    <p class="price">¥1,500〜</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 当店について -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">当店について</h2>
+            <div class="about-content">
+                <p>赤坂マーラータンは、本格的な四川風マーラータン鍋を提供するレストランです。</p>
+                <p>厳選された食材と独自のスパイスブレンドで、お客様に最高の味をお届けします。</p>
+                <p>店内は落ち着いた雰囲気で、お一人様からグループでのご利用まで、様々なシーンに対応しております。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ネット注文セクション -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="section-title">ネット注文</h2>
+            <div class="order-content">
+                <p>オンラインで簡単にご注文いただけます。</p>
+                <form class="order-form">
+                    <div class="form-group">
+                        <label for="order-name">お名前</label>
+                        <input type="text" id="order-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-phone">電話番号</label>
+                        <input type="tel" id="order-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-time">希望時間</label>
+                        <input type="datetime-local" id="order-time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-items">ご注文内容</label>
+                        <textarea id="order-items" name="items" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">注文を送信</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 予約セクション -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">予約</h2>
+            <div class="reservation-content">
+                <p>ご来店のご予約を承っております。</p>
+                <form class="reservation-form">
+                    <div class="form-group">
+                        <label for="reservation-name">お名前</label>
+                        <input type="text" id="reservation-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reservation-phone">電話番号</label>
+                        <input type="tel" id="reservation-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reservation-date">希望日時</label>
+                        <input type="datetime-local" id="reservation-date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reservation-guests">人数</label>
+                        <select id="reservation-guests" name="guests" required>
+                            <option value="">選択してください</option>
+                            <option value="1">1名</option>
+                            <option value="2">2名</option>
+                            <option value="3">3名</option>
+                            <option value="4">4名</option>
+                            <option value="5">5名以上</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">予約を送信</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><strong>住所:</strong> 東京都港区赤坂6丁目13-3　1F</p>
+                    <p><strong>電話:</strong> 03-XXXX-XXXX</p>
+                    <p><strong>メール:</strong> info@akasaka-marlatan.com</p>
+                </div>
+                <div class="social-links">
+                    <h3>ソーシャルメディア</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer">TikTok</a>
+                        <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>赤坂マーラータン</h4>
+                    <p>美味いマーラータン</p>
+                </div>
+                <div class="footer-section">
+                    <h4>フランチャイズ募集</h4>
+                    <p>フランチャイズ展開を検討されている方はお気軽にお問い合わせください。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>リンク</h4>
+                    <ul>
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#menu">メニュー</a></li>
+                        <li><a href="#about">当店について</a></li>
+                        <li><a href="#order">ネット注文</a></li>
+                        <li><a href="#reservation">予約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 赤坂マーラータン. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
